@@ -155,18 +155,18 @@ else
 endif
 
 
-all: secp256k1 poc
+all: secp256k1 ndag
 
-poc: $(sources) $(headers) Makefile
+ndag: $(sources) $(headers) Makefile
 	cc -o poc secp256k1.o $(sources) $(asm_src) -DSHA256_USE_OPENSSL_TXFM -DSHA256_OPENSSL_MBLOCK -I$(SRCROOT) -I$(utils) -isystem$(secp256k1)/include/  $(flags)
 
 secp256k1:
 	cc -O3 -I$(secp256k1)/src/ -I$(secp256k1) -c $(secp256k1)/src/secp256k1.c -lgmp
 
 clean:
-	rm poc
+	rm ndag
 	rm secp256k1.o
 
-install: poc
-	sudo cp poc /usr/local/bin/poc
-	sudo cp poc /usr/local/sbin/poc
+install: ndag
+	sudo cp ndag /usr/local/bin/ndag
+	sudo cp ndag /usr/local/sbin/ndag
