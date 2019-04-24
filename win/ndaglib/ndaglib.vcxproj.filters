@@ -1,0 +1,632 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="client">
+      <UniqueIdentifier>{10179684-3a40-406c-9c37-dddf0b26ec91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client\pool_lists">
+      <UniqueIdentifier>{5a25f905-9170-4649-9b92-13a0af95e443}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dnet">
+      <UniqueIdentifier>{e0600286-cd86-4e15-bb59-cac50d0783ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dus">
+      <UniqueIdentifier>{364450b2-14bf-4cc2-a8d3-316803397e70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dus\dar">
+      <UniqueIdentifier>{a54ad6cc-691f-4342-bef1-4b750923a6f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dus\dfstools">
+      <UniqueIdentifier>{cb67198a-32c9-4543-ae65-3172502cfe0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ldus">
+      <UniqueIdentifier>{04712346-68d9-489e-bed5-55f01b7c989a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win">
+      <UniqueIdentifier>{47adef7f-ecc8-4626-8136-5bc0e6fe234e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win\arpa">
+      <UniqueIdentifier>{eb3a2018-f72a-47d7-bbed-b503882ba44e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win\netinet">
+      <UniqueIdentifier>{08f4aff6-4a23-40f2-9ade-79cd3dc84d92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win\sys">
+      <UniqueIdentifier>{874b2b63-f358-4dea-b109-a761875c2512}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client\mining">
+      <UniqueIdentifier>{44caefc7-4416-4100-b2e3-f6d413cc6242}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client\utils">
+      <UniqueIdentifier>{71f09615-b936-42fb-b99c-61c593b206be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client\json-rpc">
+      <UniqueIdentifier>{5c470121-b197-4756-93e8-4d7bb0d55185}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client\uthash">
+      <UniqueIdentifier>{045ecca6-4308-47a2-bf89-229740ba9751}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client\http">
+      <UniqueIdentifier>{083ad2d2-3218-4c42-9ae3-55fb52fe25bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client\utils\moving_statitics">
+      <UniqueIdentifier>{ebe447cf-4047-406a-b6a6-fb64570e8ed2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="algo">
+      <UniqueIdentifier>{230ad1e4-88eb-4617-a36d-61231ec48192}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="algo\SWIFFTX">
+      <UniqueIdentifier>{c1098400-6c7e-4d57-b9e6-a165bf079869}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="algo\scryptcode">
+      <UniqueIdentifier>{bbfdbd31-03ab-45ec-bc63-97ab18bb8f8c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\client\address.c">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\block.c">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\commands.c">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\crypt.c">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\hash.c">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\memory.c">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\netdb.c">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\sha256.c">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\storage.c">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\sync.c">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\terminal.c">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\transport.c">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\wallet.c">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dnet\dnet_command.c">
+      <Filter>dnet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dnet\dnet_connection.c">
+      <Filter>dnet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dnet\dnet_crypt.c">
+      <Filter>dnet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dnet\dnet_database.c">
+      <Filter>dnet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dnet\dnet_files.c">
+      <Filter>dnet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dnet\dnet_log.c">
+      <Filter>dnet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dnet\dnet_main.c">
+      <Filter>dnet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dnet\dnet_packet.c">
+      <Filter>dnet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dnet\dnet_stream.c">
+      <Filter>dnet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dnet\dnet_tap.c">
+      <Filter>dnet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dnet\dnet_threads.c">
+      <Filter>dnet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dus\programs\dar\source\lib\crc_c.c">
+      <Filter>dus\dar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dus\programs\dfstools\source\dfslib\dfslib_crypt.c">
+      <Filter>dus\dfstools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dus\programs\dfstools\source\dfslib\dfslib_random.c">
+      <Filter>dus\dfstools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dus\programs\dfstools\source\dfslib\dfslib_string.c">
+      <Filter>dus\dfstools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dus\programs\dfstools\source\lib\dfsrsa.c">
+      <Filter>dus\dfstools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\system.c">
+      <Filter>win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\init.c">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\miner.c">
+      <Filter>client\mining</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\pool.c">
+      <Filter>client\mining</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\mining_common.c">
+      <Filter>client\mining</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\utils\log.c">
+      <Filter>client\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\utils\utils.c">
+      <Filter>client\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\json-rpc\cJSON.c">
+      <Filter>client\json-rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\json-rpc\cJSON_Utils.c">
+      <Filter>client\json-rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\json-rpc\rpc_procedures.c">
+      <Filter>client\json-rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\json-rpc\rpc_service.c">
+      <Filter>client\json-rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\json-rpc\rpc_wrapper.c">
+      <Filter>client\json-rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\http\url.c">
+      <Filter>client\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\http\http.c">
+      <Filter>client\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\utils\moving_statistics\moving_average.c">
+      <Filter>client\utils\moving_statitics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\json-rpc\rpc_procedure.c">
+      <Filter>client\json-rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\network.c">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\algo\aes_helper.c">
+      <Filter>algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\algo\blake.c">
+      <Filter>algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\algo\bmw.c">
+      <Filter>algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\algo\cubehash.c">
+      <Filter>algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\algo\echo.c">
+      <Filter>algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\algo\fugue.c">
+      <Filter>algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\algo\gost_streebog.c">
+      <Filter>algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\algo\groestl.c">
+      <Filter>algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\algo\hamsi.c">
+      <Filter>algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\algo\hamsi_helper.c">
+      <Filter>algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\algo\haval.c">
+      <Filter>algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\algo\hefty1.c">
+      <Filter>algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\algo\highwayhash.c">
+      <Filter>algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\algo\jh.c">
+      <Filter>algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\algo\keccak.c">
+      <Filter>algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\algo\luffa.c">
+      <Filter>algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\algo\lyra2.c">
+      <Filter>algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\algo\Lyra2RE.c">
+      <Filter>algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\algo\pbkdf2-hmac-sha256.c">
+      <Filter>algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\algo\scrypt-jane.c">
+      <Filter>algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\algo\sha2.c">
+      <Filter>algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\algo\shabal.c">
+      <Filter>algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\algo\shavite.c">
+      <Filter>algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\algo\simd.c">
+      <Filter>algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\algo\skein.c">
+      <Filter>algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\algo\sph_sha2.c">
+      <Filter>algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\algo\sph_sha2big.c">
+      <Filter>algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\algo\sponge.c">
+      <Filter>algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\algo\Streebog.c">
+      <Filter>algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\algo\tiger.c">
+      <Filter>algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\algo\whirlpool.c">
+      <Filter>algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\client\algo\SWIFFTX\SWIFFTX.c">
+      <Filter>algo\SWIFFTX</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\client\address.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\block.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\commands.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\crypt.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\hash.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\memory.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\netdb.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\sha256.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\state.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\storage.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\sync.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\system.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\terminal.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\transport.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\version.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\wallet.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dnet\dnet_command.h">
+      <Filter>dnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dnet\dnet_connection.h">
+      <Filter>dnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dnet\dnet_crypt.h">
+      <Filter>dnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dnet\dnet_database.h">
+      <Filter>dnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dnet\dnet_files.h">
+      <Filter>dnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dnet\dnet_history.h">
+      <Filter>dnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dnet\dnet_log.h">
+      <Filter>dnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dnet\dnet_main.h">
+      <Filter>dnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dnet\dnet_packet.h">
+      <Filter>dnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dnet\dnet_stream.h">
+      <Filter>dnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dnet\dnet_tap.h">
+      <Filter>dnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dnet\dnet_threads.h">
+      <Filter>dnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dnet\dthread.h">
+      <Filter>dnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dnet\system.h">
+      <Filter>dnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dus\programs\dar\source\include\crc.h">
+      <Filter>dus\dar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dus\programs\dfstools\source\dfslib\dfslib_crypt.h">
+      <Filter>dus\dfstools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dus\programs\dfstools\source\dfslib\dfslib_random.h">
+      <Filter>dus\dfstools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dus\programs\dfstools\source\dfslib\dfslib_string.h">
+      <Filter>dus\dfstools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dus\programs\dfstools\source\dfslib\dfslib_types.h">
+      <Filter>dus\dfstools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dus\programs\dfstools\source\include\dfsrsa.h">
+      <Filter>dus\dfstools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ldus\source\include\ldus\atomic.h">
+      <Filter>ldus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ldus\source\include\ldus\list.h">
+      <Filter>ldus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ldus\source\include\ldus\rbtree.h">
+      <Filter>ldus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\netdb.h">
+      <Filter>win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\termios.h">
+      <Filter>win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\unistd.h">
+      <Filter>win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\arpa\inet.h">
+      <Filter>win\arpa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\netinet\in.h">
+      <Filter>win\netinet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sys\ioctl.h">
+      <Filter>win\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sys\resource.h">
+      <Filter>win\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sys\socket.h">
+      <Filter>win\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sys\time.h">
+      <Filter>win\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\init.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\miner.h">
+      <Filter>client\mining</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\pool.h">
+      <Filter>client\mining</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\mining_common.h">
+      <Filter>client\mining</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\utils\log.h">
+      <Filter>client\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\utils\utils.h">
+      <Filter>client\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\json-rpc\cJSON.h">
+      <Filter>client\json-rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\json-rpc\cJSON_Utils.h">
+      <Filter>client\json-rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\json-rpc\rpc_procedures.h">
+      <Filter>client\json-rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\json-rpc\rpc_service.h">
+      <Filter>client\json-rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\json-rpc\rpc_wrapper.h">
+      <Filter>client\json-rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\uthash\utlist.h">
+      <Filter>client\uthash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\uthash\uthash.h">
+      <Filter>client\uthash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\http\http.h">
+      <Filter>client\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\http\url.h">
+      <Filter>client\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\utils\moving_statistics\moving_average.h">
+      <Filter>client\utils\moving_statitics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\types.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\json-rpc\rpc_procedure.h">
+      <Filter>client\json-rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="network.h" />
+    <ClInclude Include="..\..\client\network.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\algo\gost_streebog.h">
+      <Filter>algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\algo\hefty1.h">
+      <Filter>algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\algo\highwayhash.h">
+      <Filter>algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\algo\lyra2.h">
+      <Filter>algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\algo\Lyra2RE.h">
+      <Filter>algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\algo\pbkdf2-hmac-sha256.h">
+      <Filter>algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\algo\scrypt-jane.h">
+      <Filter>algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\algo\sph_blake.h">
+      <Filter>algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\algo\sph_bmw.h">
+      <Filter>algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\algo\sph_cubehash.h">
+      <Filter>algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\algo\sph_echo.h">
+      <Filter>algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\algo\sph_fugue.h">
+      <Filter>algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\algo\sph_groestl.h">
+      <Filter>algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\algo\sph_hamsi.h">
+      <Filter>algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\algo\sph_haval.h">
+      <Filter>algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\algo\sph_jh.h">
+      <Filter>algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\algo\sph_keccak.h">
+      <Filter>algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\algo\sph_luffa.h">
+      <Filter>algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\algo\sph_sha2.h">
+      <Filter>algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\algo\sph_shabal.h">
+      <Filter>algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\algo\sph_shavite.h">
+      <Filter>algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\algo\sph_simd.h">
+      <Filter>algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\algo\sph_skein.h">
+      <Filter>algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\algo\sph_tiger.h">
+      <Filter>algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\algo\sph_types.h">
+      <Filter>algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\algo\sph_whirlpool.h">
+      <Filter>algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\algo\sponge.h">
+      <Filter>algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\algo\Streebog.h">
+      <Filter>algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\algo\Streebog_consts.h">
+      <Filter>algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\algo\SWIFFTX\hash_interface.h">
+      <Filter>algo\SWIFFTX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\algo\SWIFFTX\inttypes.h">
+      <Filter>algo\SWIFFTX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\algo\SWIFFTX\stdbool.h">
+      <Filter>algo\SWIFFTX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\algo\SWIFFTX\stdint.h">
+      <Filter>algo\SWIFFTX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\client\algo\SWIFFTX\SWIFFTX.h">
+      <Filter>algo\SWIFFTX</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\client\netdb-testnet.txt">
+      <Filter>client\pool_lists</Filter>
+    </Text>
+    <Text Include="..\..\client\netdb-white-testnet.txt">
+      <Filter>client\pool_lists</Filter>
+    </Text>
+    <Text Include="..\..\client\netdb-white.txt">
+      <Filter>client\pool_lists</Filter>
+    </Text>
+    <Text Include="..\..\client\netdb.txt">
+      <Filter>client\pool_lists</Filter>
+    </Text>
+    <Text Include="..\..\client\pools.txt">
+      <Filter>client\pool_lists</Filter>
+    </Text>
+    <Text Include="..\..\client\pools-testnet.txt">
+      <Filter>client\pool_lists</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\client\algo\haval_helper.c.bak">
+      <Filter>algo</Filter>
+    </None>
+  </ItemGroup>
+</Project>

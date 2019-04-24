@@ -1,0 +1,50 @@
+account
+mul
+stats
+balance
+stats
+miners
+fake
+stats
+mul
+fake
+state
+net conn
+ps -aux | grep poc
+exit
+block EtjoB9aVwBfGUrK4PizigsCtVMLDeB9Zn
+block ECWYijCVW2VaskfFcxn81WPKBckDgUnUa
+block 1D8jjWTTVatdVTiBo1mza5S3gmQ5wZEF5
+block 7t9BbHYHfoVKAJikVamsrroTME8S3GaPG
+block ANqjnpL2YCeefLg8kSSBKfaWjf7ZeQS8G
+account
+pool
+exit
+stats
+miners
+exit
+stats
+miners
+pool
+exit
+stats
+tats
+stats
+exit
+stats
+exit
+stats
+state
+exit
+stats
+state
+stats
+exit
+stats
+exit
+stats
+exit
+stats
+state
+stats
+exit
