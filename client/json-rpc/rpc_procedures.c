@@ -175,7 +175,7 @@ cJSON * method_accounts(struct xdag_rpc_context *ctx, cJSON *params, cJSON *id, 
 {
 	xdag_debug("rpc call method get_account, version %s",version);
 	struct rpc_account_callback_data cbdata;
-	cbdata.count = (g_is_exwallet ? INT_MAX : 20);
+	cbdata.count = (g_is_exwallet ? 9999 : 20);
 	if (params) {
 		if (cJSON_IsArray(params)) {
 			size_t size = cJSON_GetArraySize(params);
