@@ -32,6 +32,9 @@
 //#define XDAG_MAIN_ERA           0x17040000000ll
 #define XDAG_TEST_ERA           0x16900000000ll
 #define XDAG_MAIN_ERA           0x16940000000ll
+
+#define NDAG_ERA				0x1730e6e0000ll /*NDAG ADD April 27 2019. 00:00:00 */
+
 #define XDAG_ERA                xdag_era
 #define MAIN_START_AMOUNT       (1ll << 44)
 #define MAIN_BIG_PERIOD_LOG     21
@@ -356,20 +359,20 @@ static void unset_main(struct block_internal *m)
 
 static void check_new_main(void)
 {
-	struct block_internal *bivar, *bitmp = 0;
+	struct block_internal *bm, *b = 0;
 	int i;
 
-	for (bivar = top_main_chain, i = 0; 
-			bivar && !(bivar->flags & BI_MAIN); 
-				bivar = bivar->link[bivar->max_diff_link]) {
-		if (bivar->flags & BI_MAIN_CHAIN) {
-			bitmp = bivar;
+	for (bm = top_main_chain, i = 0;
+		bm && !(bm->flags & BI_MAIN);
+		bm = bm->link[bm->max_diff_link]) {
+		if (bm->flags & BI_MAIN_CHAIN) {
+			b = bm;
 			++i;
 		}
 	}
 
-	if (bitmp && i > MAX_WAITING_MAIN && get_timestamp() >= bitmp->time + 2 * 1024) {
-		set_main(bitmp);
+	if (b && i > MAX_WAITING_MAIN && get_timestamp() >= b->time + 2 * 1024) {
+		set_main(b);
 	}
 }
 
@@ -483,13 +486,23 @@ static int add_block_nolock(struct xdag_block *newBlock, xdag_time_t limit)
 	struct block_internal tmpbi, *biRef0, *biRef1;
 	xdag_diff_t diff0, diff1;
 	int32_t cache_hit = 0, cache_miss = 0;
-
+	/* NDAG add	*/
+	int inputfar = 0;
+	int outputburned = 0;
+	xdag_hash_t burned;
+	xdag_address2hash("NLDvXEpAG9AWHaU1Qbu7v59pJHyuqCZpF", burned);
+	/* END */
 	memset(&tmpbi, 0, sizeof(struct block_internal));
 	newBlock->field[0].transport_header = 0;
 	xdag_hash(newBlock, sizeof(struct xdag_block), tmpbi.hash);
 
+	char address[34] = { 0 };
+	xdag_hash2address(tmpbi.hash, address);
 	if(block_by_hash(tmpbi.hash)) return 0;
 
+	if (newBlock->field[0].type != 0x551) {
+		int m = -1;
+	}
 	if(xdag_type(newBlock, 0) != g_block_header_type) {
 		i = xdag_type(newBlock, 0);
 		err = 1;
@@ -597,6 +610,22 @@ static int add_block_nolock(struct xdag_block *newBlock, xdag_time_t limit)
 				err = 7;
 				goto end;
 			}
+
+			/* NDAG Add*/
+			if (g_xdag_state != XDAG_STATE_LOAD) {
+				if (1 << i & inmask && newBlock->field[i].amount) {
+					if (biRef0->time < NDAG_ERA) {
+						inputfar = 1;
+					}
+				}
+				if (1 << i & outmask && newBlock->field[i].amount) {
+					if (!memcmp(burned,newBlock->field[i].hash,sizeof(xdag_hashlow_t))) {
+						outputburned = 1;
+					}
+				}
+			}
+			/*END*/
+
 			if(1 << i & inmask) {
 				if(newBlock->field[i].amount) {
 					int32_t res = 1;
@@ -651,6 +680,13 @@ static int add_block_nolock(struct xdag_block *newBlock, xdag_time_t limit)
 	if(CACHE) {
 		cache_retarget(cache_hit, cache_miss);
 	}
+
+	/*NDAG Add*/
+	if (inputfar && !outputburned) {
+		err = 0xD;
+		goto end;
+	}
+	/*END*/
 
 	if(tmpbi.in_mask ? sum_in < sum_out : sum_out != newBlock->field[0].amount) {
 		err = 0xB;
