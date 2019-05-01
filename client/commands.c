@@ -759,15 +759,15 @@ int xfer_callback(void *data, xdag_hash_t hash, xdag_amount_t amount, xdag_time_
 	int i;
 
 	//new add
-	//if(!amount) {
-	if (amount < xferData->remains ) {
-		//return -1;
-		return 0;
-	}
-	if (*(uint64_t*)xferData->fromHash) {
-		if(memcmp(hash, xferData->fromHash, sizeof(xdag_hashlow_t)))
-			return 0;
-	}
+	if(!amount) {
+	//if (amount < xferData->remains ) {
+		return -1;
+		//return 0;
+	//}
+	//if (*(uint64_t*)xferData->fromHash) {
+	//	if(memcmp(hash, xferData->fromHash, sizeof(xdag_hashlow_t)))
+	//		return 0;
+	//}
 	//***
 
 	if(!g_is_miner && xdag_main_time() < (time >> 16) + 2 * CONFIRMATIONS_COUNT) {
